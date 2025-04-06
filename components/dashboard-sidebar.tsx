@@ -57,7 +57,7 @@ export default function DashboardSidebar() {
               asChild
               className={cn(commonButtonClass, activeClass)}
             >
-              <a href="#">
+              <a href="/">
                 <Home />
                 <span>Dashboard</span>
               </a>
@@ -126,13 +126,13 @@ export default function DashboardSidebar() {
         </SidebarMenu>
         <div
           className={cn(
-            'flex items-center gap-2 py-4 pl-2 text-white transition-all',
+            'flex items-center gap-2 py-4 text-white transition-all',
             state === 'collapsed' ? 'justify-center' : 'justify-start'
           )}
         >
           <Avatar className="h-8 w-8">
-            <AvatarImage src="/placeholder.svg?height=32&width=32" alt="User" />
-            <AvatarFallback>AD</AvatarFallback>
+            <AvatarImage src="" alt="User" />
+            <AvatarFallback>A</AvatarFallback>
           </Avatar>
           {state === 'expanded' && (
             <div className="flex flex-col">

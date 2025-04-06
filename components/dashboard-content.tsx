@@ -5,14 +5,26 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Input } from "@/components/ui/input"
 import { SidebarTrigger } from "@/components/ui/sidebar"
 import { DashboardWidgets } from "./dashboard-widgets"
+import { usePathname } from "next/navigation"
+
+const pathToTitle: Record<string, string> = {
+  '/dashboard': 'Security Dashboard',
+  '/dashboard/threats': 'Threats',
+  '/dashboard/vulnerabilities': 'Vulnerabilities',
+  '/dashboard/network': 'Network',
+  '/dashboard/users': 'Users',
+  '/dashboard/reports': 'Reports',
+};
 
 export default function DashboardContent() {
+    const pathname = usePathname();
+    const pageTitle = pathToTitle[pathname] || 'Security Dashboard';
   return (
     <div className="flex flex-1 flex-col overflow-hidden">
       <header className="flex h-16 items-center justify-between border-b border-border px-4 md:px-6">
         <div className="flex items-center gap-4">
           <SidebarTrigger />
-          <h1 className="text-xl font-bold">Security Dashboard</h1>
+          <h1 className="text-xl font-bold">{pageTitle}</h1>
         </div>
         <div className="flex items-center gap-4">
           <div className="relative hidden md:block">
@@ -24,8 +36,8 @@ export default function DashboardContent() {
             />
           </div>
           <Avatar>
-            <AvatarImage src="/placeholder.svg?height=40&width=40" alt="User" />
-            <AvatarFallback>AD</AvatarFallback>
+            <AvatarImage src="" alt="User" />
+            <AvatarFallback>A</AvatarFallback>
           </Avatar>
         </div>
       </header>

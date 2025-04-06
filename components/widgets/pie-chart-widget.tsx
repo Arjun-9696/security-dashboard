@@ -85,7 +85,6 @@ export function PieChartWidget() {
                 // Use a default color if the specific one isn't found
                 const color =
                   colors[colorKey as keyof typeof colors] || colors.other;
-
                 return <Cell key={`cell-${index}`} fill={color} />;
               })}
             </Pie>
