@@ -22,7 +22,7 @@ export default function DashboardContent() {
   return (
     <div className="flex flex-1 flex-col overflow-hidden">
       <header className="flex h-16 items-center justify-between border-b border-border px-4 md:px-6">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center sm:item-left gap-4">
           <SidebarTrigger />
           <h1 className="text-xl font-bold">{pageTitle}</h1>
         </div>
