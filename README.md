@@ -108,7 +108,8 @@ An elegant and responsive **dark-themed security dashboard** built using **Next.
 ![image](https://github.com/user-attachments/assets/85465db7-b2f9-4bc5-b395-e96c949010d7)
 ![image](https://github.com/user-attachments/assets/d7dd22bd-1e25-4080-b360-2227995df09b)
 ![image](https://github.com/user-attachments/assets/085e1552-752d-4e90-9ec6-f0106eb8f056)
-![image](https://github.com/user-attachments/assets/ae229470-a612-4910-93fa-c0d41cded220)
+![image](https://github.com/user-attachments/assets/845a99ba-e071-48aa-aa3e-14595676b8b6)
+
 
 ---
 
