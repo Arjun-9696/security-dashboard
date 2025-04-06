@@ -36,11 +36,11 @@ export default function DashboardSidebar() {
 
   return (
     <Sidebar variant="sidebar" collapsible="icon" className="bg-sidebarBg">
-      <SidebarHeader className="flex items-center justify-center py-5">
+      <SidebarHeader className="flex md:items-center justify-center py-5 ">
         <div
           className={cn(
-            'flex items-center gap-2 transition-all text-white',
-            state === 'collapsed' ? 'justify-start' : 'justify-start px-4'
+            'flex md:items-centre sm:items-start sm:justify-start ml-[-14px] gap-2 transition-all text-white',
+            state === 'collapsed' ? 'justify-start' : 'justify-centre px-4'
           )}
         >
           <Shield className="h-6 w-6 text-accent" />
