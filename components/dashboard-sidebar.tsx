@@ -40,7 +40,7 @@ export default function DashboardSidebar() {
         <div
           className={cn(
             'flex items-center gap-2 transition-all text-white',
-            state === 'collapsed' ? 'justify-center' : 'justify-start px-4'
+            state === 'collapsed' ? 'justify-start' : 'justify-start px-4'
           )}
         >
           <Shield className="h-6 w-6 text-accent" />
